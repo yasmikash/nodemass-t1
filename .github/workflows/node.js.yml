@@ -9,10 +9,10 @@ on:
   pull_request:
     branches: [master]
 
-  env:
-    PROD_ARTIFACT_NAME: nodemass
-    PROD_ARTIFACT_FILE_NAME: modemass-${{ github.run_id }}.tgz
-    BUILD_OUTPUT: ./dist
+env:
+  PROD_ARTIFACT_NAME: nodemass
+  PROD_ARTIFACT_FILE_NAME: modemass-${{ github.run_id }}.tgz
+  BUILD_OUTPUT: ./dist
 
 jobs:
   build:
